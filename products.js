@@ -1,17 +1,25 @@
-// NAYA PRODUCT ADD KARNE KE LIYE: bas neeche list mein ek naya { } block copy-paste karke
-// details bhar do. Kisi aur file ko touch karne ki zaroorat nahi.
 const PRODUCTS = [
   {
-    name: "Product Name",
-    price: 999,
-    img: "https://example.com/image.jpg", // ya apni image ka file path/URL
-    desc: "Chota sa description yahan likhein."
-  },
-  // Naya product neeche isi tarah add karein:
-  // {
-  //   name: "Doosra Product",
-  //   price: 1299,
-  //   img: "photo2.jpg",
-  //   desc: "Iska description."
-  // },
+    id: 1,
+    name: "Women's Cotton Printed Kurti Set with Dupatta",
+    price: 699,
+    mrp: 999,
+    discount: "30% OFF",
+    img: "images/kurti1-1.jpg",
+    images: [
+      "images/kurti1-1.jpg",
+      "images/kurti1-2.jpg",
+      "images/kurti1-3.jpg",
+      "images/kurti1-4.jpg"
+    ],
+    sizes: ["S", "M", "L", "XL", "XXL"],
+    colors: ["Cream", "Blue"],
+    fabric: "Cotton",
+    sleeve: "3/4 Sleeve",
+    neck: "V Neck",
+    stock: true,
+    desc: "Premium cotton printed kurti set with matching dupatta. Soft, comfortable and perfect for daily wear, office and casual occasions."
+  }
 ];
+
+export default PRODUCTS;
