@@ -2,9 +2,9 @@ const PRODUCTS = [
   {
     id: 1,
     name: "Women's Cotton Printed Kurti Set with Dupatta",
-    price: 699,
-    mrp: 999,
-    discount: "30% OFF",
+    price: 100,
+    mrp: 1000,
+    discount: "90% OFF",
     img: "images/kurti1-1.jpg",
     images: [
       "images/kurti1-1.jpg",
