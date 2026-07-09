@@ -172,7 +172,12 @@ function render(){
     const card = document.createElement('div');
     card.className='card';
     card.innerHTML = `
-      <div class="imgwrap"><img src="${p.img || 'femora-logo.png'}" alt="${p.name}"></div>
+      <div class="imgwrap">
+  <img id="mainimg-${i}" src="${(p.images && p.images[0]) || p.img || 'femora-logo.png'}" alt="${p.name}">
+</div>
+<div style="display:flex;gap:6px;justify-content:center;padding:8px;flex-wrap:wrap;">
+${(p.images||[p.img]).map((im,idx)=>`<img src="${im}" style="width:42px;height:42px;object-fit:cover;border:1px solid #ddd;border-radius:6px;cursor:pointer;" onclick="document.getElementById('mainimg-${i}').src='${im}'">`).join('')}
+</div>
       <div class="body">
         <h3>${p.name}</h3>
         <p>${p.desc||''}</p>
